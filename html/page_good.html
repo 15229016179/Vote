@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<div class="index">
+    <div class="index-top">
+        <img src="../img/ic_title_bg.png">
+
+        <div class="index-top-inform">
+            <div class="index-top-inform-bg"></div>
+            <img src="../img/ic_inform.png">
+            <marquee class="index-top-inform-marquee" id="marquee_inform" direction="left" scrollamount="8">
+                这里是公告信息，他会滚，会从左向右滚，不停地滚
+            </marquee>
+        </div>
+
+        <div class="index-top-title">
+            <p class="index-top-title-p1" id="periods">第201708期评选</p>
+
+            <p class="index-top-title-p2" id="endDate">本期评选结束日期：2017年9月3日</p>
+        </div>
+
+        <p class="index-top-tip">*请选择您推荐的员工，并如实填写相关信息。</p>
+    </div>
+
+    <div class="index-content">
+        <div class="index-content-person">
+            <ul class="persons" id="personnel"></ul>
+        </div>
+        <div class="index-content-goods">
+            <p>优秀称号(必选) </p>
+            <a>*长按可查看称号描述</a>
+
+            <div class="goods-select">
+                <button class="goods-select-button">最佳进步</button>
+                <button class="goods-select-button">最佳科技</button>
+                <button class="goods-select-button">最佳工程</button>
+                <button class="goods-select-button">最佳销售</button>
+                <button class="goods-select-button">最佳协作</button>
+                <button class="goods-select-button">最佳节约</button>
+                <button class="goods-select-button">好人好事</button>
+                <button class="goods-select-button">最佳主人翁</button>
+                <button class="goods-select-button">最佳宣传</button>
+                <button class="goods-select-button">最佳内推</button>
+                <button class="goods-select-button">其它称号</button>
+            </div>
+            <div class="goods-other">
+                <input type="text" style_type="line" id="goods_other" maxlength="6" placeholder="请填写其它称号，限制6个字以内"/>
+            </div>
+        </div>
+        <div class="index-content-reason">
+            <p>推荐理由(必填)</p>
+            <textarea type="text" id="goods_reason" maxlength="120" placeholder="请如实填写推荐理由，字数不少于20字"/>
+
+            <p id="good_word" onclick="showWord()">查看《月度优秀员工评选制度》</p>
+        </div>
+
+    </div>
+    <div class="index-bottom">
+        <button id="submit" onclick="submitVote()">继续推荐</button>
+    </div>
+</div>
+
+<div class="login" id="login">
+    <div class="login-bg" id="login_bg"></div>
+
+    <div class="login-content" id="login_content">
+        <div class="login-window">
+            <div class="login-window-title">
+                <img src="../img/ic_logo.png">
+
+                <p>请登录</p>
+            </div>
+            <div class="login-window-input">
+                <input type="text" style_type="line" id="login_name" placeholder="请输入姓名"/>
+                <input type="password" style_type="line" id="login_password" placeholder="请输入姓名"/>
+            </div>
+            <div class="login-window-submit">
+                <button id="login_submit" onclick="login()">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text" id="text">
+    <div class="text-bg" id="text_bg"></div>
+    <div class="text-content" id="text_content">
+        <div class="text-window" id="text_window">
+            <div class="text-window-title">
+                <p id="text_title">《月度优秀员工评选制度》</p>
+                <button onclick="closeWindow()">Close</button>
+            </div>
+            <p id="text_content_info">
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/good.js"></script>
+
+</body>
+</html>

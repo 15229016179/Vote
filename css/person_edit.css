@@ -1,0 +1,150 @@
+.person-edit {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index:500;
+    top: 0;
+
+    display: none;
+}
+
+.person-edit-bg {
+    width: 100%;
+    height: 31.6rem;
+    background-color: #000;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    position: absolute;
+    pointer-events: auto;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+}
+
+.person-edit-content {
+    height: 100%;
+    top: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.person-edit-window {
+    width: 17.777rem;
+    background-color: #fff;
+    position: absolute;
+    margin: 0 1.111rem 0 1.111rem;
+    z-index: 300;
+    top: 50%;
+    transform: translateY(-50%);
+
+    -webkit-border-radius: 0.277rem;
+    -moz-border-radius: 0.277rem;
+    border-radius: 0.277rem;
+}
+
+.person-edit-window-title {
+    width: 100%;
+    padding-left: 0.833rem;
+    text-align: left;
+}
+
+.person-edit-window-title p {
+    font-size: 0.889rem;
+    color: #49a3ef;
+    margin: 0.833rem auto;
+}
+
+.person-edit-window-title button {
+    width: 2rem;
+    position: absolute;
+    top: 0.833rem;
+    right: 0.833rem;
+    float: right;
+    text-align: right;
+    background: none;
+    color: #ff5202;
+    font-size: 0.889rem;
+}
+
+.person-edit-head {
+    text-align: center;
+}
+
+.person-edit-head input {
+    width: 4.5rem;
+    height: 4.5rem;
+    opacity: 0;
+    position: absolute;
+}
+
+.person-edit-head img {
+    width: 4.5rem;
+    height: 4.5rem;
+
+    border: 1px solid #e4e5e6;
+
+    -webkit-border-radius: 2.25rem;
+    -moz-border-radius: 2.25rem;
+    border-radius: 2.25rem;
+}
+
+.person-edit-window-input {
+    margin: 0.833rem 0.833rem 0 0.833rem;
+}
+
+#person_edit_name {
+    width: 15rem;
+}
+
+#person_edit_job {
+    width: 15rem;
+    margin-top: 0.556rem;
+}
+
+#person_edit_password {
+    width: 15rem;
+    margin-top: 0.556rem;
+}
+
+#person_edit_submit {
+    width: 5rem;
+    height: 1.944rem;
+    font-size: 0.833rem;
+    margin-top: 0.833rem;
+    margin-bottom: 0.833rem;
+
+    color: #fff;
+    background-color: #49a3ef;
+
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    border-radius: 2.5rem;
+}
+
+#person_edit_submit:active {
+    color: #fff;
+    background-color: #e4e5e6;
+}
+
+.person-edit-select {
+    padding-top: 0.833rem;
+    text-align: left;
+    margin-left: 1.667rem;
+}
+
+.select-btn {
+    text-align: left;
+    width: 45%;
+    color: #606468;
+    font-size: 0.833rem;
+    background: url("../img/ic_cb_def.png") center left no-repeat;
+    background-size: 1.111rem 0.889rem;
+    padding-left: 1.388rem;
+}
+
+.select-btn::selection {
+    background: url("../img/ic_cb_checked.png") center left no-repeat;
+    background-size: 1.111rem 0.889rem;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <!--清除浏览器缓存-->
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title id="title">员工月度绩效评分</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/ic_logo.jpg" media="screen"/>
+    <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/flexible.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/grade.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/grade.css">
+    <link rel="stylesheet" type="text/css" href="../css/grade_edit.css">
+</head>
+<body>
+
+<div class="title">
+    <div class="title-child">
+        <div class="title-back" id="back" onclick="history.go(-1);">
+            <img class="title-back-icon" src="../img/ic_back.png"/>
+
+            <p>返回</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="grade-content">
+    <ul class="person-list" id="personnel"></ul>
+</div>
+
+<div class="grade-edit" id="grade_edit">
+    <div class="grade-edit-bg" id="grade_edit_bg"></div>
+
+    <div class="grade-edit-content" id="grade_edit_content">
+
+        <div class="grade-edit-window">
+            <div class="grade-edit-window-title">
+                <p>员工绩效评分</p>
+                <button onclick="closeEdit()">Close</button>
+            </div>
+            <p id="grade_edit_name"></p>
+
+            <p id="grade_edit_job"></p>
+
+            <div class="grade-edit-window-input">
+                <input type="number" style_type="line" id="grade_edit_number" placeholder="请输入该员工本月绩效得分"/>
+            </div>
+            <div class="grade-edit-window-submit">
+                <button id="grade_edit_submit" onclick="submitGrade(this)">提&nbsp;交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

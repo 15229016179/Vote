@@ -1,0 +1,126 @@
+
+.result {
+    text-align: center;
+    height: 33.556rem;
+    background: url('../img/ic_result_bg.png') center left no-repeat;
+    background-size: 100% 33.556rem;
+}
+
+.result-title {
+    height: 6.111rem;
+}
+
+.result-title-img {
+    height: 5.556rem;
+    margin-top: 0.556rem;
+}
+
+.result-content {
+    margin-top: 0.278rem;
+}
+
+.result-person {
+    width: 50%;
+    float: left;
+}
+
+.crown {
+    position: absolute;
+    z-index: 2;
+}
+
+.result-image {
+    width: 3.5rem;
+    height: 7.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.result-image .header {
+    position: absolute;
+    top: 3.889rem;
+    z-index: 1;
+}
+
+.img-crown {
+    width: 3.5rem;
+    height: 3.889rem;
+    z-index: 100;
+}
+
+.img-head {
+    width: 4.167rem;
+    height: 4.167rem;
+    margin-top: -0.6rem;
+    transform: translateX(-0.36rem);
+
+    /*border: 1px solid firebrick;*/
+
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    border-radius: 3rem;
+}
+
+.result-name {
+    font-size: 1.111rem;
+    color: #fff;
+    padding-top: 0.555rem;
+}
+
+.result-job {
+    font-size: 0.889rem;
+    color: #fff;
+    margin-top: 0.278rem;
+}
+
+.result-tag {
+    width: 6.9rem;
+    height: 3rem;
+    position: relative;
+    text-align: center;
+    margin: 0.833rem auto 0 auto;
+}
+
+.result-tag-img {
+    width: 6.9rem;
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.result-tag-title {
+    color: #ffe42e;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-62%);
+    width: 6.8rem;
+    margin: 0 auto;
+}
+
+.result-recNum {
+    font-size: 0.556rem;
+    height: 2.222rem;
+    color: #fff;
+    padding: 0.556rem 0.556rem 0 0.556rem;
+}
+
+.result-grade {
+    font-size: 0.889rem;
+    color: #fff;
+    padding-top: 1.111rem;
+}
+
+.result-word {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #49a3ef;
+    font-size: 0.889rem;
+    text-decoration: underline;
+    padding-bottom: 4.2rem;
+    padding-right: 1.111rem;
+    float: right;
+}

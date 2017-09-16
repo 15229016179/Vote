@@ -1,0 +1,119 @@
+.title {
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+}
+
+.title-child {
+    height: 2.778rem;
+    background-color: #fff;
+    position: relative;
+    padding-left: 1.111rem;
+    border-bottom: 1px solid #e4e5e6;
+}
+
+.title-back {
+    height: 2.778rem;
+    width: 20%;
+}
+
+.title-back img {
+    height: 1rem;
+    width: 0.861rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.title-back p {
+    display: inline-block;
+    font-size: 0.972rem;
+    color: #49a3ef;
+    position: absolute;
+    left: 2rem;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.grade-content {
+    margin-top: 3.334rem;
+}
+
+.person-list {
+    background: #e4e5e6;
+    padding-bottom: 0.556rem;
+}
+
+.person-item {
+    background: #fff;
+    min-height: 4.444rem;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1px;
+}
+
+.item-person {
+    height: 3.333rem;
+    position: relative;
+    padding-top: 0.556rem;
+    padding-left: 1.111rem;
+    padding-bottom: 0.556rem;
+}
+
+.item-person img {
+    height: 3.333rem;
+    width: 3.333rem;
+
+    border: 1px solid #e4e5e6;
+
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    border-radius: 3rem;
+}
+
+.item-person-title {
+    position: absolute;
+    margin: 0 auto;
+    left: 5.278rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.person-p1 {
+    font-size: 1rem;
+    color: #606468;
+}
+
+.person-p2 {
+    font-size: 0.778rem;
+    color: #9aa1a7;
+    padding-top: 0.5rem;
+}
+
+/* 选择人员列表按钮默认的样式 */
+.item-person-edit {
+    width: 5rem;
+    height: 1.944rem;
+    position: absolute;
+    margin: 0 auto;
+    right: 1.111rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 0.778rem;
+
+    color: #fff;
+    background: #49a3ef;
+
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+.item-person-edit:active {
+    color: #fff;
+    background: #e4e5e6;
+}

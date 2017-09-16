@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <!--清除浏览器缓存-->
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title id="title">编辑员工信息</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/ic_logo.jpg" media="screen"/>
+    <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/flexible.js"></script>
+    <script type="text/javascript" src="../js/cropper.min.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/person.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/person.css">
+    <link rel="stylesheet" type="text/css" href="../css/person_edit.css">
+    <link rel="stylesheet" type="text/css" href="../css/clip.css">
+    <link rel="stylesheet" type="text/css" href="../css/cropper.min.css">
+</head>
+<body>
+
+<div class="title">
+    <div class="title-child">
+        <div class="title-back" id="back" onclick="history.go(-1);">
+            <img class="title-back-icon" src="../img/ic_back.png"/>
+
+            <p>返回</p>
+        </div>
+        <div class="title-menu-add" id="previous">
+            <button onclick="showEdit(-1)">添加员工</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="person-content">
+    <ul class="person-list" id="personnel"></ul>
+</div>
+
+<div class="person-edit" id="person_edit">
+    <div class="person-edit-bg" id="person_edit_bg"></div>
+
+    <div class="person-edit-content" id="person_edit_content">
+
+        <div class="person-edit-window">
+            <div class="person-edit-window-title">
+                <p id="person_edit_title">添加员工</p>
+                <button onclick="closeEdit()">Close</button>
+            </div>
+
+            <div class="person-edit-head">
+                <input id="head_input" src="../img/ic_head_def.png" type="file" accept="image/*;capture=camera"
+                       onclick="headOnClick()" onchange="headOnChange()">
+                <img id="person_edit_head" isChange="false" src="../img/ic_head_def.png"
+                     onerror="javascript:this.src='../img/ic_head_def.png'"/>
+            </div>
+
+            <div class="person-edit-window-input">
+                <input type="text" style_type="line" id="person_edit_name" placeholder="请填写员工姓名"/>
+                <input type="text" style_type="line" id="person_edit_job" placeholder="请填写员工所属部门-职务"/>
+                <input type="text" style_type="line" id="person_edit_password" placeholder="请填写员工登录密码"/>
+            </div>
+            <div class="person-edit-select">
+                <button class="select-btn" id="select_vote" select="false" onclick="selectChange(this)">选举权</button>
+                <button class="select-btn" id="select_selected" select="false" onclick="selectChange(this)">被选举权
+                </button>
+            </div>
+            <div class="person-edit-select">
+                <button class="select-btn" id="select_assign" select="false" onclick="selectChange(this)">指定权</button>
+                <button class="select-btn" id="select_admin" select="false" onclick="selectChange(this)">管理员权限</button>
+            </div>
+            <div class="person-edit-window-submit">
+                <button id="person_edit_submit" onclick="submit()">保&nbsp;存</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="clip" id="clip">
+    <div class="clip-title">
+        <div class="title-back" onclick="document.getElementById('clip').style.display = 'none';stopClip()">
+            <img class="title-back-icon" src="../img/ic_back.png"
+                 onerror="javascript:this.src='../img/ic_head_def.png'"/>
+
+            <p>返回</p>
+        </div>
+        <div class="title-menu-submit" id="submit">
+            <button onclick="submitClip()">使用</button>
+        </div>
+    </div>
+    <div class="avatar-wrapper" id="clip_wrapper"></div>
+</div>
+</body>
+</html>

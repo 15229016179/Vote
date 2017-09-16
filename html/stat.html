@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <!--清除浏览器缓存-->
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title id="title">员工推荐结果统计</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/ic_logo.jpg" media="screen"/>
+    <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/flexible.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/stat.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/stat.css">
+</head>
+<body>
+
+<div class="title">
+
+    <div class="title-child">
+
+        <div class="title-back" id="back" onclick="history.go(-1);">
+            <img class="title-back-icon" src="../img/ic_back.png"/>
+
+            <p>返回</p>
+        </div>
+        <div class="title-menu-current" id="current" onclick="initStat(this)"><button>本期推荐</button></div>
+        <div class="title-menu-previous" id="previous" onclick="initStat(this)"><button>往期推荐</button></div>
+
+    </div>
+
+</div>
+
+<div class="stat-content">
+    <ul class="stat-list" id="stat_list"></ul>
+</div>
+
+</body>
+</html>

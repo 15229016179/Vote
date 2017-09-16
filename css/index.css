@@ -1,0 +1,45 @@
+.content {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.nav-line {
+    width: 100%;
+    height: 1px;
+}
+
+.nav {
+    background: #fff;
+    width: 100%;
+    height: 3.333rem;
+    position: fixed;
+    color: #9aa1a7;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #e4e5e6;
+}
+
+.nav-menu {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10%;
+}
+
+.nav-name {
+    display: block;
+    font-size: 0.833rem;
+    font-family: "Microsoft YaHei";
+}
+
+.active {
+    color: #49a3ef;
+}
+
+.nav-img {
+    width: 1.333rem;
+}

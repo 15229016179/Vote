@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<div class="admin">
+
+    <div class="admin-item" id="admin_stat" onclick="window.location.href = 'stat.html'">
+        <img class="admin-item-icon" src="../img/ic_admin_stat.png"/>
+
+        <p>员工推荐结果统计</p>
+
+        <div class="admin-item-next">
+            <img src="../img/ic_next_grey.png"/>
+        </div>
+    </div>
+    <div class="admin-item" id="admin_person" onclick="window.location.href = 'person.html'">
+        <img class="admin-item-icon" src="../img/ic_admin_person.png"/>
+
+        <p>编辑员工信息</p>
+
+        <div class="admin-item-next">
+            <img src="../img/ic_next_grey.png"/>
+        </div>
+    </div>
+    <div class="admin-item" id="admin_assess" onclick="window.location.href = 'grade.html'">
+        <img class="admin-item-icon" src="../img/ic_admin_assess.png"/>
+
+        <p>员工月度绩效评分</p>
+
+        <div class="admin-item-next">
+            <img src="../img/ic_next_grey.png"/>
+        </div>
+    </div>
+    <div class="admin-item" id="admin_title" onclick="showEdit()">
+        <img class="admin-item-icon" src="../img/ic_title.png"/>
+
+        <p>编辑本期优秀称号</p>
+
+        <div class="admin-item-next">
+            <img src="../img/ic_next_grey.png"/>
+        </div>
+    </div>
+
+    <div class="admin-inform">
+        <p>编辑公告</p>
+        <textarea type="text" id="admin_inform" placeholder="请输入系统公告信息"/>
+
+        <div class="admin-inform-submit">
+            <button onclick="submitInform()">发布公告</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="title-edit" id="title_edit">
+    <div class="title-edit-bg" id="title_edit_bg"></div>
+
+    <div id="title_edit_content">
+        <div class="title-edit-window">
+            <div class="title-edit-window-title">
+                <p>请填写本期优秀员工称号</p>
+                <button onclick="closeEdit()">Close</button>
+            </div>
+            <div class="title-edit-window-input">
+                <input type="text" style_type="line" id="title_edit_recommend" placeholder="请输入获选者优秀称号"/>
+                <textarea type="text" id="title_edit_recommend_reason" placeholder="请输入获选者推荐理由"/>
+                <input type="text" style_type="line" id="title_edit_assign" placeholder="请输入被指定者优秀称号"/>
+                <textarea type="text" id="title_edit_assign_reason" placeholder="请输入被指定者推荐理由"/>
+            </div>
+            <div class="title-edit-window-submit">
+                <button id="title_edit_submit" onclick="submitTitle()">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/admin.js"></script>
+
+</body>
+</html>
