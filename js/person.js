@@ -61,7 +61,7 @@ function showEdit(position) {
     edit.style.height = ($(window).height() - edit.offsetTop) + 'px';
     edit.style.display = 'inline';
     document.getElementById("person_edit_title").innerText = '添加员工';
-    if (position >= 0) {
+    if (position >= 0) { // 点击的是编辑按钮，会传一个position，新增时position是-1
         document.getElementById("person_edit_title").innerText = '编辑员工信息';
         var person = personnel[position];
         var header = person.header;

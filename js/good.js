@@ -123,7 +123,7 @@ function initInform() {
             if (inform) {
                 $(".index-top-inform").css("display", "inline");
                 document.getElementById("marquee_inform").innerHTML = inform;
-            } else {
+            } else { // 没有公告信息，需要隐藏公告栏
                 $(".index-top-inform").css("display", "none");
             }
         },
@@ -353,7 +353,7 @@ function showWord() {
 }
 
 /**
- * 显示信息窗口
+ * 显示信息窗口，包括优秀称号和《月度优秀员工评选制度（试行）》
  * @param title
  * @param content
  */
